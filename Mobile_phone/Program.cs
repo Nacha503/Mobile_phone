@@ -20,7 +20,16 @@ namespace Mobile_phone
             miTelefono.Model = "S9";
             miTelefono.Price = 150.20d;
             miTelefono.Owner = "Oscar Carranza";
-            miTelefono
+
+            miTelefono.AgregarLlamada(new Call(DateTime.Today, "9:43 pm", "25 minutos"));
+            miTelefono.AgregarLlamada(new Call(DateTime.Today, "9:50 pm", "27 minutos"));
+            miTelefono.AgregarLlamada(new Call(DateTime.Today, "9:55 pm", "30 minutos"));
+
+            miTelefono.ImprimirListaDeLlamadas();
+            Console.WriteLine("Costo de llamadas: "+miTelefono.FacturarLlamadas());
+
+
+
 
 
             Battery mibateria = new Battery(Battery.Bateria.Litio2)
@@ -32,7 +41,9 @@ namespace Mobile_phone
             miPantalla.Tamaño = Display.SizeDisplay.Medium;
 
 
-            
+
+
+            Console.ReadKey();
 
 
 

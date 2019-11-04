@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mobile_phone
 {
-   public class Display
+    class Display
     {
         public enum SizeDisplay
         {
@@ -18,6 +18,6 @@ namespace Mobile_phone
 
         public string Colors { get { return colors; } set { colors = value; } }
         public SizeDisplay Tamaño { get { return tamañoPantalla; } set { tamañoPantalla = value; } }
-      
+
     }
 }

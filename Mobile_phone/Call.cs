@@ -9,24 +9,26 @@ namespace Mobile_phone
     class Call
     {
 
-         DateTime fecha;
+        DateTime fecha;
 
-         double timeOfStart, durationOfTheCall;
+        string timeOfStart, durationOfTheCall;
+        public const double priceCall = 0.17d;
 
 
 
 
-        public Call(DateTime fechaDeLlamada, double timeOfStart, double durationOfTheCall)
+        public Call(DateTime fechaDeLlamada, string timeOfStart, string durationOfTheCall)
         {
             fecha = fechaDeLlamada;
             this.timeOfStart = timeOfStart;
             this.durationOfTheCall = durationOfTheCall;
+            
         }
 
         public DateTime Fecha { get { return fecha; } set { fecha = value; } }
-        public double TimeOfStart { get { return timeOfStart; } set { timeOfStart = value} }
+        public string TimeOfStart { get { return timeOfStart; } set { timeOfStart = value; } }
 
-        public double DurationOfTheCall { get { return durationOfTheCall; } set { durationOfTheCall = value; } }
+        public string DurationOfTheCall { get { return durationOfTheCall; } set { durationOfTheCall = value; } }
 
     }
 }

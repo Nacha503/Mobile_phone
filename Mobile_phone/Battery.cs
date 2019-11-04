@@ -8,7 +8,7 @@ namespace Mobile_phone
 {
     class Battery
     {
-         public enum Bateria
+        public enum Bateria
         {
             Litio = 100, Litio2 = 150, Litio3 = 300
         }
@@ -26,11 +26,11 @@ namespace Mobile_phone
         public double HoursTalk { get { return hoursTalk; } set { hoursTalk = value; } }
 
 
-        public Battery( Bateria tamaño)
+        public Battery(Bateria tamaño)
         {
             this.tamaño = tamaño;
         }
 
-       
+
     }
 }
