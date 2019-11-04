@@ -20,6 +20,7 @@ namespace Mobile_phone
             miTelefono.Model = "S9";
             miTelefono.Price = 150.20d;
             miTelefono.Owner = "Oscar Carranza";
+            miTelefono
 
 
             Battery mibateria = new Battery(Battery.Bateria.Litio2)
